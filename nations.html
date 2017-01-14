@@ -11,9 +11,9 @@
   <meta name="twitter:domain" content="http://romsson.github.io/dragit/">
   <title>A Re-Recreation of Gapminder’s Wealth & Health of Nations - Romain Vuillemot</title>
   <meta name="description" content="Drag & Drop World Countries (if you can)">
-  <link href="../src/dragit.css" rel="stylesheet"/>
-  <script src="../lib/d3.v3.js"></script>
-  <script src="../src/dragit.js"></script>
+  <link href="dragit.css" rel="stylesheet"/>
+  <script src="https://d3js.org/d3.v3.js"></script>
+  <script src="dragit.js"></script>
 </head>
 <title>A Re-Recreation of Gapminder’s Wealth & Health of Nations - Romain Vuillemot</title>
 <style>
@@ -217,7 +217,7 @@ var countrylabel = svg.append("text")
 var first_time = true;
 
 // Load the data.
-d3.json("../data/nations.json", function(nations) {
+d3.json("nations.json", function(nations) {
 
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
